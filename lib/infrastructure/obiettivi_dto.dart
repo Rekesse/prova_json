@@ -2,6 +2,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:porcoddio_1/domain/obiettivi.dart';
 
 part 'obiettivi_dto.freezed.dart';
+part 'obiettivi_dto.g.dart';
 
 @freezed
 class ObiettiviDTO with _$ObiettiviDTO {

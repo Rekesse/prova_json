@@ -4,6 +4,7 @@ import 'package:porcoddio_1/infrastructure/obiettivi_dto.dart';
 import 'package:porcoddio_1/infrastructure/personale_dto.dart';
 
 part 'team_dto.freezed.dart';
+part 'team_dto.g.dart';
 
 @freezed
 class TeamDTO with _$TeamDTO {

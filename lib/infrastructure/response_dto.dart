@@ -3,6 +3,7 @@ import 'package:porcoddio_1/domain/team.dart';
 import 'package:porcoddio_1/infrastructure/team_dto.dart';
 
 part 'response_dto.freezed.dart';
+part 'response_dto.g.dart';
 
 @freezed
 class ResponseDTO with _$ResponseDTO {

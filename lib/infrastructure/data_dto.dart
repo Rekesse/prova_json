@@ -2,6 +2,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:porcoddio_1/domain/data.dart';
 
 part 'data_dto.freezed.dart';
+part 'data_dto.g.dart';
 
 @freezed
 class DataDTO with _$DataDTO {

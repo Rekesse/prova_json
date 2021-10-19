@@ -3,6 +3,7 @@ import 'package:porcoddio_1/domain/personale.dart';
 import 'package:porcoddio_1/infrastructure/data_dto.dart';
 
 part 'personale_dto.freezed.dart';
+part 'personale_dto.g.dart';
 
 @freezed
 class PersonaleDTO with _$PersonaleDTO {

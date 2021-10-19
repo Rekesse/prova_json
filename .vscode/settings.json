@@ -11,12 +11,14 @@
     "/.hg": true,
     "/CVS": true,
     "/.DS_Store": true,
-    "/.freezed.dart": true,
-    "**/.g.dart": true,
+    "**/*.freezed.dart": true,
+    "**/*.g.dart": true,
     "/.classpath": true,
     "/.project": true,
     "/.settings": true,
-    "/.factorypath": true
+    "/.factorypath": true,
+    "/.freezed.dart": true,
+    "**/.g.dart": true
   },
   "explorerExclude.backup": null
 }
