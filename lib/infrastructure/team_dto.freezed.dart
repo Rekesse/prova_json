@@ -26,11 +26,13 @@ class _$TeamDTOTearOff {
       @JsonKey(name: 'numero-personale')
           required int numPersonale,
       @JsonKey(name: 'personale-specifico')
-          required List<PersonaleDTO> personale}) {
+          required List<PersonaleDTO> personale,
+      required ObiettiviDTO obiettivi}) {
     return _TeamDTO(
       azienda: azienda,
       numPersonale: numPersonale,
       personale: personale,
+      obiettivi: obiettivi,
     );
   }
 
@@ -49,6 +51,7 @@ mixin _$TeamDTO {
   int get numPersonale => throw _privateConstructorUsedError;
   @JsonKey(name: 'personale-specifico')
   List<PersonaleDTO> get personale => throw _privateConstructorUsedError;
+  ObiettiviDTO get obiettivi => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -62,7 +65,10 @@ abstract class $TeamDTOCopyWith<$Res> {
   $Res call(
       {String azienda,
       @JsonKey(name: 'numero-personale') int numPersonale,
-      @JsonKey(name: 'personale-specifico') List<PersonaleDTO> personale});
+      @JsonKey(name: 'personale-specifico') List<PersonaleDTO> personale,
+      ObiettiviDTO obiettivi});
+
+  $ObiettiviDTOCopyWith<$Res> get obiettivi;
 }
 
 /// @nodoc
@@ -78,6 +84,7 @@ class _$TeamDTOCopyWithImpl<$Res> implements $TeamDTOCopyWith<$Res> {
     Object? azienda = freezed,
     Object? numPersonale = freezed,
     Object? personale = freezed,
+    Object? obiettivi = freezed,
   }) {
     return _then(_value.copyWith(
       azienda: azienda == freezed
@@ -92,7 +99,18 @@ class _$TeamDTOCopyWithImpl<$Res> implements $TeamDTOCopyWith<$Res> {
           ? _value.personale
           : personale // ignore: cast_nullable_to_non_nullable
               as List<PersonaleDTO>,
+      obiettivi: obiettivi == freezed
+          ? _value.obiettivi
+          : obiettivi // ignore: cast_nullable_to_non_nullable
+              as ObiettiviDTO,
     ));
+  }
+
+  @override
+  $ObiettiviDTOCopyWith<$Res> get obiettivi {
+    return $ObiettiviDTOCopyWith<$Res>(_value.obiettivi, (value) {
+      return _then(_value.copyWith(obiettivi: value));
+    });
   }
 }
 
@@ -104,7 +122,11 @@ abstract class _$TeamDTOCopyWith<$Res> implements $TeamDTOCopyWith<$Res> {
   $Res call(
       {String azienda,
       @JsonKey(name: 'numero-personale') int numPersonale,
-      @JsonKey(name: 'personale-specifico') List<PersonaleDTO> personale});
+      @JsonKey(name: 'personale-specifico') List<PersonaleDTO> personale,
+      ObiettiviDTO obiettivi});
+
+  @override
+  $ObiettiviDTOCopyWith<$Res> get obiettivi;
 }
 
 /// @nodoc
@@ -121,6 +143,7 @@ class __$TeamDTOCopyWithImpl<$Res> extends _$TeamDTOCopyWithImpl<$Res>
     Object? azienda = freezed,
     Object? numPersonale = freezed,
     Object? personale = freezed,
+    Object? obiettivi = freezed,
   }) {
     return _then(_TeamDTO(
       azienda: azienda == freezed
@@ -135,6 +158,10 @@ class __$TeamDTOCopyWithImpl<$Res> extends _$TeamDTOCopyWithImpl<$Res>
           ? _value.personale
           : personale // ignore: cast_nullable_to_non_nullable
               as List<PersonaleDTO>,
+      obiettivi: obiettivi == freezed
+          ? _value.obiettivi
+          : obiettivi // ignore: cast_nullable_to_non_nullable
+              as ObiettiviDTO,
     ));
   }
 }
@@ -145,7 +172,8 @@ class _$_TeamDTO extends _TeamDTO {
   const _$_TeamDTO(
       {required this.azienda,
       @JsonKey(name: 'numero-personale') required this.numPersonale,
-      @JsonKey(name: 'personale-specifico') required this.personale})
+      @JsonKey(name: 'personale-specifico') required this.personale,
+      required this.obiettivi})
       : super._();
 
   factory _$_TeamDTO.fromJson(Map<String, dynamic> json) =>
@@ -159,10 +187,12 @@ class _$_TeamDTO extends _TeamDTO {
   @override
   @JsonKey(name: 'personale-specifico')
   final List<PersonaleDTO> personale;
+  @override
+  final ObiettiviDTO obiettivi;
 
   @override
   String toString() {
-    return 'TeamDTO(azienda: $azienda, numPersonale: $numPersonale, personale: $personale)';
+    return 'TeamDTO(azienda: $azienda, numPersonale: $numPersonale, personale: $personale, obiettivi: $obiettivi)';
   }
 
   @override
@@ -173,12 +203,14 @@ class _$_TeamDTO extends _TeamDTO {
             (identical(other.azienda, azienda) || other.azienda == azienda) &&
             (identical(other.numPersonale, numPersonale) ||
                 other.numPersonale == numPersonale) &&
-            const DeepCollectionEquality().equals(other.personale, personale));
+            const DeepCollectionEquality().equals(other.personale, personale) &&
+            (identical(other.obiettivi, obiettivi) ||
+                other.obiettivi == obiettivi));
   }
 
   @override
   int get hashCode => Object.hash(runtimeType, azienda, numPersonale,
-      const DeepCollectionEquality().hash(personale));
+      const DeepCollectionEquality().hash(personale), obiettivi);
 
   @JsonKey(ignore: true)
   @override
@@ -197,7 +229,8 @@ abstract class _TeamDTO extends TeamDTO {
       @JsonKey(name: 'numero-personale')
           required int numPersonale,
       @JsonKey(name: 'personale-specifico')
-          required List<PersonaleDTO> personale}) = _$_TeamDTO;
+          required List<PersonaleDTO> personale,
+      required ObiettiviDTO obiettivi}) = _$_TeamDTO;
   const _TeamDTO._() : super._();
 
   factory _TeamDTO.fromJson(Map<String, dynamic> json) = _$_TeamDTO.fromJson;
@@ -210,6 +243,8 @@ abstract class _TeamDTO extends TeamDTO {
   @override
   @JsonKey(name: 'personale-specifico')
   List<PersonaleDTO> get personale;
+  @override
+  ObiettiviDTO get obiettivi;
   @override
   @JsonKey(ignore: true)
   _$TeamDTOCopyWith<_TeamDTO> get copyWith =>
