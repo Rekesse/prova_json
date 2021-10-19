@@ -1,0 +1,132 @@
+{
+    "team": [
+        {
+            "azienda": "mini-fetchem",
+            "numero-personale": 3,
+            "personale-specifico": [
+                {
+                    "nome": "nome-1",
+                    "cognome": "cognome-1",
+                    "settore": "settore-1",
+                    "data": {
+                        "gg": 20,
+                        "mm": 3,
+                        "yy": 2012
+                    }
+                },
+                {
+                    "nome": "nome-2",
+                    "cognome": "cognome-2",
+                    "settore": "settore-2",
+                    "data": {
+                        "gg": 24,
+                        "mm": 11,
+                        "yy": 2013
+                    }
+                },
+                {
+                    "nome": "nome-3",
+                    "cognome": "cognome-3",
+                    "settore": "settore-3",
+                    "data": {
+                        "gg": 34,
+                        "mm": 9,
+                        "yy": 2015
+                    }
+                }
+            ],
+            "obiettivi": {
+                "primari": [
+                    "spa",
+                    "app",
+                    "web"
+                ],
+                "secondari": [
+                    "backend",
+                    "frontend",
+                    "design"
+                ]
+            }
+        },
+        {
+            "azienda": "fetchem",
+            "numero-personale": 6,
+            "personale-specifico": [
+                {
+                    "nome": "nome-1",
+                    "cognome": "cognome-1",
+                    "settore": "settore-1",
+                    "data": {
+                        "gg": 20,
+                        "mm": 3,
+                        "yy": 2012
+                    }
+                },
+                {
+                    "nome": "nome-2",
+                    "cognome": "cognome-2",
+                    "settore": "settore-2",
+                    "data": {
+                        "gg": 24,
+                        "mm": 11,
+                        "yy": 2013
+                    }
+                },
+                {
+                    "nome": "nome-3",
+                    "cognome": "cognome-3",
+                    "settore": "settore-3",
+                    "data": {
+                        "gg": 34,
+                        "mm": 9,
+                        "yy": 2015
+                    }
+                },
+                {
+                    "nome": "nome-4",
+                    "cognome": "cognome-4",
+                    "settore": "settore-4",
+                    "data": {
+                        "gg": 18,
+                        "mm": 10,
+                        "yy": 2016
+                    }
+                },
+                {
+                    "nome": "nome-5",
+                    "cognome": "cognome-5",
+                    "settore": "settore-5",
+                    "data": {
+                        "gg": 28,
+                        "mm": 10,
+                        "yy": 2017
+                    }
+                },
+                {
+                    "nome": "nome-6",
+                    "cognome": "cognome-6",
+                    "settore": "settore-6",
+                    "data": {
+                        "gg": 56,
+                        "mm": 5,
+                        "yy": 2018
+                    }
+                }
+            ],
+            "obiettivi": {
+                "primari": [
+                    "spa-hairdressers",
+                    "app",
+                    "web",
+                    "spa-doctor",
+                    "spa-lawyers"
+                ],
+                "secondari": [
+                    "backend",
+                    "frontend",
+                    "design"
+                ]
+            }
+        }
+    ]
+}
